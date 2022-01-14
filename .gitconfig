@@ -12,6 +12,15 @@
 [alias]
 	d = difftool
 	graph = log --graph --abbrev-commit --decorate --all
+    log-default = log --graph --abbrev-commit --decorate --all --pretty="default"
+    log-compact = log --graph --abbrev-commit --decorate --all --pretty="compact"
+    log-simple = log --decorate --date=short --pretty="simple"
+    undo-last-commit = reset HEAD~1
+    wipe-last-commit = reset --hard HEAD~1
+    find-message = "!f() { git log-compact --grep=$1; }; f"
+    find-source-branch-from-commit = "!f() { git describe --all --contains $1; }; f"
+    find-all-branch-related-to-commit = "!f() { git for-each-ref --contains $1; }; f"
 [pretty]
 	compact = format:%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
 	default = format:%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow) %d%C(reset)%n          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)
+    simple = format:%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d
