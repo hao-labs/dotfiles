@@ -1,3 +1,6 @@
+# common
+abbr -a c   clear
+
 # nvim
 abbr -a v   nvim
 abbr -a vim nvim
