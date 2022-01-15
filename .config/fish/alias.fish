@@ -1,5 +1,6 @@
 # common
 abbr -a c   clear
+abbr -a rf  refresh_fish
 
 # nvim
 abbr -a v   nvim
@@ -31,6 +32,10 @@ abbr -a gu  git undo-last-commit
 abbr -a gw  git wipe-last-commit
 
 # exa
-abbr -a l exa -la --no-permissions --octal-permissions --header --icons
-abbr -a lg exa -la --no-permissions --octal-permissions --header --icons --git
+abbr -a l  list
+abbr -a lg list --git
 abbr -a lt exa --tree
+
+# to make it short
+alias list='exa -la --no-permissions --octal-permissions --header --icons'
+alias refresh_fish='exec fish'
