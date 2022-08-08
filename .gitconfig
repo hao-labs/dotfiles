@@ -2,7 +2,8 @@
 	email = hao.labs.2011@gmail.com
 	name = Cahyo Bagus L
 [core]
-	editor = nvim
+	editor = lvim
+	autocrlf = false
 [diff]
 	tool = nvimdiff
 [difftool]
