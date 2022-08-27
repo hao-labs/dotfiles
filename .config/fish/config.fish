@@ -5,7 +5,11 @@ if status is-interactive
   starship init fish | source
 
 
-source ~/.config/fish/alias.fish
+  # pnpm
+  set -gx pnpm_home "/home/hao/.local/share/pnpm"
+  set -gx path "$pnpm_home" $path
+  # pnpm end
+end
 
 # Install Starship
 starship init fish | source
