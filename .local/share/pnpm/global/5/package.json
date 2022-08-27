@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tree-sitter-cli": "^0.20.6",
+    "@fsouza/prettierd": "^0.18.1",
+    "eslint_d": "^11.1.1",
+    "write-good": "^1.0.8"
+  }
+}

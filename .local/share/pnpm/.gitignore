@@ -1,0 +1,23 @@
+# Ignore All
+*
+
+# Unignore all dirs
+!*/
+
+# Unignore all with extensions
+!*.*
+
+# Unignore package.json for pnpm global
+!global/5/package.json
+
+# Unignore pnpm-lock for pnpm global
+!global/5/pnpm-lock.yaml
+
+# Ignore store folder
+store/*
+
+# Ignore global .pnpm folder
+global/5/.pnpm/*
+
+# Ignore global node_modules folder
+global/5/node_modules/*
