@@ -1,3 +1,6 @@
 [submodule "dotfiles-secret"]
 	path = dotfiles-secret
 	url = git@github.com:hao-labs/dotfiles-secret.git
+[submodule ".config/lvim"]
+	path = .config/lvim
+	url = git@github.com:hao-labs/lunarvim-config.git
