@@ -10,6 +10,3 @@ if status is-interactive
   set -gx path "$pnpm_home" $path
   # pnpm end
 end
-
-# Install Starship
-starship init fish | source
