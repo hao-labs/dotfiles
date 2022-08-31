@@ -1,5 +1,5 @@
 [submodule "dotfiles-secret"]
-	path = dotfiles-secret
+	path = local-env
 	url = git@github.com:hao-labs/dotfiles-secret.git
 [submodule ".config/lvim"]
 	path = .config/lvim
