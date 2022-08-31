@@ -16,6 +16,9 @@
 # Ignore store folder
 store/*
 
+# Ignore nodejs folder (using pnpm node version manager)
+nodejs/*
+
 # Ignore global .pnpm folder
 global/5/.pnpm/*
 
