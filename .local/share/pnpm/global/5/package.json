@@ -1,8 +1,28 @@
 {
   "dependencies": {
-    "tree-sitter-cli": "^0.20.6",
     "@fsouza/prettierd": "^0.18.1",
-    "eslint_d": "^11.1.1",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint_d": "^12.2.0",
+    "neovim": "^4.10.1",
+    "tree-sitter-cli": "^0.20.6",
     "write-good": "^1.0.8"
+  },
+  "dependenciesMeta": {
+    "eslint_d": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "commitizen": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "neovim": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "tree-sitter-cli": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "cz-conventional-changelog": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    }
   }
 }
