@@ -12,7 +12,7 @@ abbr -a gs  git status -sb
 abbr -a ga  git add
 abbr -a gc  git commit
 # switch branch
-abbr -a gco git-checkout
+abbr -a gco git checkout
 abbr -a gb  git branch -av
 # interract with remote
 abbr -a gcl git clone
