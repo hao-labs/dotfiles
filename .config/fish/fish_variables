@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR __docker_compose_plugin_initialized:Tue\x20Mar\x2021\x2009\x3a44\x3a36\x20PM\x20\x2b07\x202023
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_c:clear
 SETUVAR _fish_abbr_fab:git\x20find\x2dall\x2dbranch\x2drelated\x2dto\x2dcommit
@@ -10,7 +11,7 @@ SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gb:git\x20branch\x20\x2dav
 SETUVAR _fish_abbr_gc:git\x20commit
 SETUVAR _fish_abbr_gcl:git\x20clone
-SETUVAR _fish_abbr_gco:git\x2dcheckout
+SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gd:git\x20difftool
 SETUVAR _fish_abbr_gds:git\x20difftool\x20\x2d\x2dstaged
 SETUVAR _fish_abbr_gl:git\x20log\x2ddefault
