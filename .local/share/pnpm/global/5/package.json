@@ -1,11 +1,20 @@
 {
   "dependencies": {
-    "@fsouza/prettierd": "^0.18.1",
-    "commitizen": "^4.2.5",
+    "@fsouza/prettierd": "^0.23.4",
+    "@pnpm/exe": "^8.6.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint_d": "^12.2.0",
-    "neovim": "^4.10.1",
-    "tree-sitter-cli": "^0.20.6",
+    "eslint_d": "^12.2.1",
+    "hygen": "^6.2.11",
+    "hygen-add": "^1.0.5",
+    "hygen-cook": "^1.5.0",
+    "live-server": "^1.2.2",
+    "plop": "^3.1.2",
+    "pnpm": "^8.4.0",
+    "react-plopjs": "^2.1.1",
+    "stylelint-lsp": "^1.2.4",
+    "tree-sitter-cli": "^0.20.7",
     "write-good": "^1.0.8"
   },
   "dependenciesMeta": {
@@ -13,16 +22,46 @@
       "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
     },
     "commitizen": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
-    },
-    "neovim": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
     },
     "tree-sitter-cli": {
       "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
     },
     "cz-conventional-changelog": {
       "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "hygen": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "hygen-add": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "react-plopjs": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "@pnpm/exe": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "conventional-changelog-cli": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "hygen-cook": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+    },
+    "plop": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "@fsouza/prettierd": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "live-server": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "pnpm": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "stylelint-lsp": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
     }
   }
 }
