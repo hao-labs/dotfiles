@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@devcontainers/cli": "^0.51.2",
     "@fsouza/prettierd": "^0.23.4",
     "@pnpm/exe": "^8.6.0",
     "commitizen": "^4.3.0",
@@ -15,6 +16,7 @@
     "react-plopjs": "^2.1.1",
     "stylelint-lsp": "^1.2.4",
     "tree-sitter-cli": "^0.20.7",
+    "vscode-html-languageserver-bin": "^1.4.0",
     "write-good": "^1.0.8"
   },
   "dependenciesMeta": {
@@ -61,6 +63,12 @@
       "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
     },
     "stylelint-lsp": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "vscode-html-languageserver-bin": {
+      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+    },
+    "@devcontainers/cli": {
       "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
     }
   }
