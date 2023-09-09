@@ -3,7 +3,7 @@ abbr -a c   clear
 abbr -a rf  refresh_fish
 
 # nvim
-abbr -a v   lvim
+abbr -a v   nvim
 abbr -a vim nvim
 
 # git
