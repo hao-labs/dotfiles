@@ -9,3 +9,5 @@ if status is-interactive
   set -gx PATH "$PNPM_HOME" $PATH
   # pnpm end
 end
+
+git-town completions fish | source
