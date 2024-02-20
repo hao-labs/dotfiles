@@ -5,7 +5,7 @@ if status is-interactive
   starship init fish | source
 
   # pnpm
-  set -gx PNPM_HOME "/home/hao/.local/share/pnpm"
+  set -gx PNPM_HOME "$HOME/.local/share/pnpm"
   set -gx PATH "$PNPM_HOME" $PATH
   # pnpm end
 end
