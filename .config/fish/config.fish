@@ -15,4 +15,13 @@ if status is-interactive
   # pnpm end
 end
 
+# Auto Completions for Fish shell
 git-town completions fish | source
+
+if test -d (brew --prefix)"/share/fish/completions"
+    set -p fish_complete_path (brew --prefix)/share/fish/completions
+end
+
+if test -d (brew --prefix)"/share/fish/vendor_completions.d"
+    set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
+end
