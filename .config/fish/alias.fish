@@ -40,5 +40,5 @@ abbr -a lg list --git
 abbr -a lt exa --tree
 
 # to make it short
-alias list='exa -la --no-permissions --octal-permissions --header --icons'
+alias list='eza -la --no-permissions --octal-permissions --header --icons'
 alias refresh_fish='exec fish'
