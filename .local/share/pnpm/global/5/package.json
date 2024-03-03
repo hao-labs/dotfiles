@@ -1,75 +1,79 @@
 {
   "dependencies": {
-    "@devcontainers/cli": "^0.51.2",
-    "@fsouza/prettierd": "^0.23.4",
-    "@pnpm/exe": "^8.6.0",
+    "@devcontainers/cli": "^0.56.2",
+    "@fsouza/prettierd": "^0.25.2",
+    "@pnpm/exe": "^8.15.4",
     "commitizen": "^4.3.0",
-    "conventional-changelog-cli": "^2.2.2",
+    "conventional-changelog-cli": "^4.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint_d": "^12.2.1",
+    "eslint_d": "^13.1.2",
     "hygen": "^6.2.11",
     "hygen-add": "^1.0.5",
     "hygen-cook": "^1.5.0",
     "live-server": "^1.2.2",
-    "plop": "^3.1.2",
-    "pnpm": "^8.13.1",
+    "neovim": "^5.0.1",
+    "plop": "^4.0.1",
+    "pnpm": "^8.15.4",
     "react-plopjs": "^2.1.1",
-    "stylelint-lsp": "^1.2.4",
-    "tree-sitter-cli": "^0.20.7",
+    "stylelint-lsp": "^2.0.0",
+    "tree-sitter-cli": "^0.21.0",
     "vscode-html-languageserver-bin": "^1.4.0",
     "write-good": "^1.0.8"
   },
   "dependenciesMeta": {
     "eslint_d": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "commitizen": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "tree-sitter-cli": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "cz-conventional-changelog": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "hygen": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "hygen-add": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "react-plopjs": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "@pnpm/exe": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "conventional-changelog-cli": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "hygen-cook": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/16.17.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "plop": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "@fsouza/prettierd": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "live-server": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "pnpm": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "stylelint-lsp": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
     "vscode-html-languageserver-bin": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
     "@devcontainers/cli": {
-      "node": "/home/hao/.local/share/pnpm/nodejs/18.14.0/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
+    },
+    "neovim": {
+      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     }
   }
 }
