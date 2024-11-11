@@ -1,6 +1,10 @@
+# Environment variables
+set -gx NVIM_APPNAME "astronvim_v4"
+
 if status is-interactive
   # Commands to run in interactive sessions can go here
   source ~/.config/fish/alias.fish
+  source ~/.config/fish/functions/notify.fish
   # Install Starship
   starship init fish | source
 
