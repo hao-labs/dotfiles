@@ -2,14 +2,14 @@
   email = hao.labs.2011@gmail.com
   name = Cahyo Bagus L
 [core]
-  editor = lvim
+  editor = nvim
   autocrlf = false
 [diff]
   tool = nvimdiff
 [difftool]
   prompt = False
 [difftool "nvimdiff"]
-  cmd = "lvim -d \"$LOCAL\" \"$REMOTE\""
+  cmd = "nvimdiff \"$LOCAL\" \"$REMOTE\""
 [alias]
   d = difftool
   graph = log --graph --abbrev-commit --decorate --all
