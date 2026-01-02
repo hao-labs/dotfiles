@@ -1,5 +1,7 @@
 # Environment variables
 set -gx NVIM_APPNAME "astronvim_v4"
+set -gx GEMINI_API_KEY "AIzaSyDYx1T6YysinRr41NCdc1TQV_Yz8Z8YCyw"
+set -gx PATH "/usr/bin" $PATH
 
 if status is-interactive
   # Commands to run in interactive sessions can go here
@@ -29,3 +31,10 @@ end
 if test -d (brew --prefix)"/share/fish/vendor_completions.d"
     set -p fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/cahyo/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
