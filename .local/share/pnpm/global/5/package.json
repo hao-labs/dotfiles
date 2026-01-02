@@ -1,26 +1,22 @@
 {
   "dependencies": {
     "@devcontainers/cli": "^0.56.2",
-    "@fsouza/prettierd": "^0.25.3",
-    "@pnpm/exe": "^9.11.0",
+    "@executeautomation/database-server": "^1.1.0",
+    "@fsouza/prettierd": "^0.25.4",
     "@styled/typescript-styled-plugin": "^1.0.1",
-    "carbon-now-cli": "^2.0.0",
-    "commitizen": "^4.3.0",
+    "carbon-now-cli": "^2.1.0",
+    "commitizen": "^4.3.1",
     "conventional-changelog-cli": "^4.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint_d": "^14.0.4",
-    "hygen": "^6.2.11",
-    "hygen-add": "^1.0.5",
-    "hygen-cook": "^1.5.0",
+    "eslint_d": "^14.3.0",
     "live-server": "^1.2.2",
-    "neovim": "^5.2.1",
-    "plop": "^4.0.1",
-    "pnpm": "^9.11.0",
-    "react-plopjs": "^2.1.1",
-    "stylelint-lsp": "^2.0.0",
-    "tree-sitter-cli": "^0.23.0",
-    "typescript": "^5.6.2",
-    "typescript-styled-plugin": "^0.18.3",
+    "mcp-hub": "^4.2.1",
+    "neovim": "^5.3.0",
+    "newman": "^6.2.1",
+    "opencode-ai": "1.0.223",
+    "stylelint-lsp": "^2.0.1",
+    "tree-sitter-cli": "^0.25.8",
+    "typescript": "^5.8.3",
     "vscode-html-languageserver-bin": "^1.4.0",
     "write-good": "^1.0.8"
   },
@@ -37,35 +33,14 @@
     "cz-conventional-changelog": {
       "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
     },
-    "hygen": {
-      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
-    },
-    "hygen-add": {
-      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
-    },
-    "react-plopjs": {
-      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
-    },
-    "@pnpm/exe": {
-      "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
-    },
     "conventional-changelog-cli": {
       "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
     },
-    "hygen-cook": {
-      "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
-    },
-    "plop": {
-      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
-    },
     "@fsouza/prettierd": {
-      "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
+      "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
     },
     "live-server": {
       "node": "/home/hao/.local/share/pnpm/nodejs_current/bin/node"
-    },
-    "pnpm": {
-      "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
     },
     "stylelint-lsp": {
       "node": "/home/cahyo/.local/share/pnpm/nodejs_current/bin/node"
@@ -85,11 +60,20 @@
     "@styled/typescript-styled-plugin": {
       "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
     },
-    "typescript-styled-plugin": {
-      "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
-    },
     "carbon-now-cli": {
       "node": "/home/cahyo/.local/share/pnpm/nodejs/20.11.1/bin/node"
+    },
+    "mcp-hub": {
+      "node": "/home/cahyo/.local/share/pnpm/nodejs/22.15.0/bin/node"
+    },
+    "newman": {
+      "node": "/home/cahyo/.local/share/pnpm/nodejs/22.15.0/bin/node"
+    },
+    "@executeautomation/database-server": {
+      "node": "/home/cahyo/.local/share/pnpm/nodejs/22.15.0/bin/node"
+    },
+    "opencode-ai": {
+      "node": "/home/cahyo/.local/share/pnpm/nodejs/20.14.0/bin/node"
     }
   }
 }
