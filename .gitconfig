@@ -21,6 +21,21 @@
   find-message = "!f() { git log-compact --grep=$1; }; f"
   find-source-branch-from-commit = "!f() { git describe --all --contains $1; }; f"
   find-all-branch-related-to-commit = "!f() { git for-each-ref --contains $1; }; f"
+	hack = town hack
+	ship = town ship
+	sync = town sync
+	append = town append
+	compress = town compress
+	contribute = town contribute
+	diff-parent = town diff-parent
+	observe = town observe
+	park = town park
+	prepend = town prepend
+	propose = town propose
+	repo = town repo
+	set-parent = town set-parent
+	delete = town delete
+	rename = town rename
 [pretty]
   compact = format:%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)
   default = format:%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow) %d%C(reset)%n          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)
