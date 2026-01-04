@@ -12,9 +12,13 @@
     "memcached@latest",
     "mysql84@latest"
   ],
-  "include": ["path:./devbox.d/memcached/plugin.json"],
+  "include": ["path:./plugins/memcached/plugin.json"],
   "env": {
-    "NGINX_WEB_PORT": "8080"
+    "NGINX_WEB_PORT": "8080",
+    "MEMCACHED_PORT": "11211",
+    "MEMCACHED_MEMORY": "64",
+    "MEMCACHED_CONNECTIONS": "1024",
+    "MEMCACHED_LISTEN": "127.0.0.1"
   },
   "shell": {
     "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
@@ -22,7 +26,7 @@
       "test":            ["echo \"Error: no test specified\" && exit 1"],
       "build_nginx":     "if [ -f $NGINX_CONFDIR/nginx.template ]; then envsubst $(awk 'BEGIN {for (k in ENVIRON) {printf \"$\"k\",\"}}') < $NGINX_CONFDIR/nginx.template > $NGINX_CONFDIR/nginx.conf; fi",
       "start_nginx":     "nginx -p $NGINX_PATH_PREFIX -c $NGINX_CONFDIR/nginx.conf -e error.log -g \"pid nginx.pid;daemon off;\"",
-      "start_memcached": "memcached -p 11211 -u nobody -m 64 -c 1024 -l 127.0.0.1 -d"
+      "start_memcached": "memcached -p ${MEMCACHED_PORT:-11211} -m ${MEMCACHED_MEMORY:-64} -c ${MEMCACHED_CONNECTIONS:-1024} -l ${MEMCACHED_LISTEN:-127.0.0.1} -d"
     }
   }
 }
