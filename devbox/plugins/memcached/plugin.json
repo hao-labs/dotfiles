@@ -2,6 +2,12 @@
   "name": "memcached",
   "version": "0.0.1",
   "readme": "Local Memcached service plugin",
+  "env": {
+    "MEMCACHED_PORT": "11211",
+    "MEMCACHED_MEMORY": "64",
+    "MEMCACHED_CONNECTIONS": "1024",
+    "MEMCACHED_LISTEN": "127.0.0.1"
+  },
   "create_files": {
     "{{ .Virtenv }}/process-compose.yaml": "files/process-compose.yaml"
   }

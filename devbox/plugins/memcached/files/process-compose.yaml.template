@@ -1,0 +1,6 @@
+version: "0.5"
+processes:
+  memcached:
+    command: memcached -p $MEMCACHED_PORT -m $MEMCACHED_MEMORY -c $MEMCACHED_CONNECTIONS -l $MEMCACHED_LISTEN
+    availability:
+      restart: on_failure
