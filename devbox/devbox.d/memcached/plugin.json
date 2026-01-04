@@ -9,6 +9,6 @@
     "MEMCACHED_LISTEN": "127.0.0.1"
   },
   "create_files": {
-    "{{ .Virtenv }}/process-compose.yaml": "files/process-compose.yaml"
+    "{{ .Virtenv }}/process-compose.yaml": "process-compose.yaml"
   }
 }
