@@ -1,0 +1,6 @@
+version: "0.5"
+processes:
+  memcached:
+    command: memcached -p 11211 -u nobody -m 64 -c 1024 -l 127.0.0.1
+    availability:
+      restart: on_failure
