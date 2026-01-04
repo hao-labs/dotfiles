@@ -10,15 +10,24 @@
     "rabbitmq-server@latest",
     "nginx@latest",
     "memcached@latest",
-    "mysql84@latest"
+    "mysql84@latest",
+    "php@8.4",
+    "php84Packages.composer",
+    "php84Extensions.amqp",
+    "php84Extensions.redis",
+    "php84Extensions.pdo",
+    "php84Extensions.pdo_mysql",
+    "php84Extensions.pdo_pgsql",
+    "php84Extensions.sockets"
   ],
   "include": ["path:./devbox.d/memcached/plugin.json"],
   "env": {
-    "NGINX_WEB_PORT": "8080",
-    "MEMCACHED_PORT": "11211",
-    "MEMCACHED_MEMORY": "64",
+    "NGINX_WEB_PORT":        "80",
+    "PHPFPM_PORT": "9000",
+    "MEMCACHED_PORT":        "11211",
+    "MEMCACHED_MEMORY":      "64",
     "MEMCACHED_CONNECTIONS": "1024",
-    "MEMCACHED_LISTEN": "127.0.0.1"
+    "MEMCACHED_LISTEN":      "127.0.0.1"
   },
   "shell": {
     "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
