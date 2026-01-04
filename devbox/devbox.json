@@ -12,7 +12,7 @@
     "memcached@latest",
     "mysql84@latest"
   ],
-  "include": ["path:./plugins/memcached/plugin.json"],
+  "include": ["path:./devbox.d/memcached/plugin.json"],
   "env": {
     "NGINX_WEB_PORT": "8080",
     "MEMCACHED_PORT": "11211",
