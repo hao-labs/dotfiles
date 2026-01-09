@@ -12,32 +12,47 @@
     "memcached@latest",
     "mysql84@latest",
     "php@8.4",
-    "php84Packages.composer",
     "php84Extensions.amqp",
-    "php84Extensions.redis",
     "php84Extensions.memcached",
     "php84Extensions.pdo",
     "php84Extensions.pdo_mysql",
     "php84Extensions.pdo_pgsql",
+    "php84Extensions.redis",
     "php84Extensions.sockets",
+    "php84Extensions.swoole",
     "lazygit@latest",
-    "lazydocker@latest"
+    "lazydocker@latest",
+    "lazysql@latest",
+    "sqlit-tui@latest",
+    "go@latest",
+    "basedpyright@latest",
+    "pyrefly@latest",
+    "ruff@latest",
+    "black@latest",
+    "bun@latest"
   ],
-  "include": ["path:./devbox.d/memcached/plugin.json"],
+  "include": [
+    "path:./devbox.d/memcached/plugin.json"
+  ],
   "env": {
-    "NGINX_WEB_PORT":          "8081",
+    "NGINX_WEB_PORT": "8081",
+    "NGINX_WEB_SERVER_NAME": "localhost",
     "NGINX_SITES_ENABLED_DIR": "/home/hao/dotfiles/devbox/devbox.d/nginx/sites-enabled",
-    "MEMCACHED_PORT":          "11211",
-    "MEMCACHED_MEMORY":        "64",
-    "MEMCACHED_CONNECTIONS":   "1024",
-    "MEMCACHED_LISTEN":        "127.0.0.1"
+    "MEMCACHED_PORT": "11211",
+    "MEMCACHED_MEMORY": "64",
+    "MEMCACHED_CONNECTIONS": "1024",
+    "MEMCACHED_LISTEN": "127.0.0.1"
   },
   "shell": {
-    "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
     "scripts": {
-      "test":            ["echo \"Error: no test specified\" && exit 1"],
-      "build_nginx":     "if [ -f $NGINX_CONFDIR/nginx.template ]; then envsubst $(awk 'BEGIN {for (k in ENVIRON) {printf \"$\"k\",\"}}') < $NGINX_CONFDIR/nginx.template > $NGINX_CONFDIR/nginx.conf; fi",
-      "start_nginx":     "nginx -p $NGINX_PATH_PREFIX -c $NGINX_CONFDIR/nginx.conf -e error.log -g \"pid nginx.pid;daemon off;\"",
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ],
+      "build_nginx": "if [ -f $NGINX_CONFDIR/nginx.template ]; then envsubst $(awk 'BEGIN {for (k in ENVIRON) {printf \"$\"k\",\"}}') < $NGINX_CONFDIR/nginx.template > $NGINX_CONFDIR/nginx.conf; fi",
+      "start_nginx": "nginx -p $NGINX_PATH_PREFIX -c $NGINX_CONFDIR/nginx.conf -e error.log -g \"pid nginx.pid;daemon off;\"",
       "start_memcached": "memcached -p ${MEMCACHED_PORT:-11211} -m ${MEMCACHED_MEMORY:-64} -c ${MEMCACHED_CONNECTIONS:-1024} -l ${MEMCACHED_LISTEN:-127.0.0.1} -d"
     }
   }
