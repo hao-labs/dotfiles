@@ -2,7 +2,6 @@
   "plugin": [
     "oh-my-opencode",
     "opencode-pty",
-    "@simonwjackson/opencode-direnv",
     "opencode-antigravity-auth@latest"
   ],
   "provider": {
@@ -139,6 +138,35 @@
             }
           }
         },
+        "antigravity-claude-opus-4-6-thinking": {
+          "name": "Claude Opus 4.6 Thinking (Antigravity)",
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          },
+          "modalities": {
+            "input": [
+              "text",
+              "image",
+              "pdf"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "variants": {
+            "low": {
+              "thinkingConfig": {
+                "thinkingBudget": 8192
+              }
+            },
+            "max": {
+              "thinkingConfig": {
+                "thinkingBudget": 32768
+              }
+            }
+          }
+        },
         "gemini-2.5-flash": {
           "name": "Gemini 2.5 Flash (Gemini CLI)",
           "limit": {
@@ -208,6 +236,21 @@
           }
         }
       }
+    }
+  },
+  "mcp": {
+    "dbhub": {
+      "type": "local",
+      "enabled": true,
+      "command": [
+        "npx",
+        "-y",
+        "@bytebase/dbhub@latest",
+        "--transport",
+        "stdio",
+        "--config",
+        "/home/hao/dotfiles/.config/opencode/dbhub.toml"
+      ]
     }
   },
   "theme": "tokyonight",
