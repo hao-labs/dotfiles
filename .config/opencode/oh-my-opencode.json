@@ -2,26 +2,47 @@
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "google_auth": false,
   "agents": {
-    "Sisyphus": {
-      "model": "zai-coding-plan/glm-4.7"
+    "sisyphus": {
+      "model": "opencode/kimi-k2.5-free"
+    },
+    "sisyphus-junior": {
+      "model": "opencode/glm-5-free"
     },
     "librarian": {
       "model": "zai-coding-plan/glm-4.7"
     },
     "explore": {
-      "model": "opencode/minimax-m2.1-free"
+      "model": "zai-coding-plan/glm-4.7-flash"
+    },
+    "metis": {
+      "model": "opencode/minimax-m2.5-free"
     },
     "oracle": {
-      "model": "google/antigravity-claude-opus-4-5-thinking"
+      "model": "opencode/gpt-5-nano"
+    },
+    "atlas": {
+      "model": "zai-coding-plan/glm-4.7"
+    },
+    "prometheus": {
+      "model": "opencode/big-pickle"
+    },
+    "build": {
+      "model": "zai-coding-plan/glm-5"
     },
     "frontend-ui-ux-engineer": {
-      "model": "google/antigravity-gemini-3-pro"
+      "model": "zai-coding-plan/glm-5"
     },
     "document-writer": {
-      "model": "google/antigravity-gemini-3-flash"
+      "model": "opencode/big-pickle"
     },
     "multimodal-looker": {
-      "model": "google/antigravity-gemini-3-flash"
+      "model": "zai-coding-plan/glm-4.7-flash"
+    }
+  },
+  "background_task": {
+    "modelConcurrency": {
+      "zai-coding-plan/glm-4.7-flash": 1,
+      "zai-coding-plan/glm-4.7": 1
     }
   }
 }
