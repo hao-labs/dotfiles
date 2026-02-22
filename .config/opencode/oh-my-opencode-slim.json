@@ -1,0 +1,86 @@
+{
+  "preset": "dynamic",
+  "presets": {
+    "dynamic": {
+      "oracle": {
+        "model": "zai-coding-plan/glm-4.7",
+        "variant": "high",
+        "skills": [],
+        "mcps": []
+      },
+      "orchestrator": {
+        "model": "zai-coding-plan/glm-4.7",
+        "skills": [
+          "*"
+        ],
+        "mcps": [
+          "websearch"
+        ]
+      },
+      "fixer": {
+        "model": "zai-coding-plan/glm-4.7",
+        "variant": "low",
+        "skills": [],
+        "mcps": []
+      },
+      "designer": {
+        "model": "zai-coding-plan/glm-4.7",
+        "variant": "medium",
+        "skills": [
+          "agent-browser"
+        ],
+        "mcps": []
+      },
+      "librarian": {
+        "model": "zai-coding-plan/glm-4.7",
+        "variant": "low",
+        "skills": [],
+        "mcps": [
+          "websearch",
+          "context7",
+          "grep_app"
+        ]
+      },
+      "explorer": {
+        "model": "zai-coding-plan/glm-5",
+        "variant": "low",
+        "skills": [],
+        "mcps": []
+      }
+    }
+  },
+  "balanceProviderUsage": true,
+  "fallback": {
+    "enabled": true,
+    "timeoutMs": 15000,
+    "chains": {
+      "oracle": [
+        "zai-coding-plan/glm-4.7",
+        "opencode/gpt-5-nano"
+      ],
+      "orchestrator": [
+        "zai-coding-plan/glm-4.7",
+        "opencode/gpt-5-nano"
+      ],
+      "fixer": [
+        "zai-coding-plan/glm-4.7",
+        "zai-coding-plan/glm-5",
+        "opencode/minimax-m2.5-free"
+      ],
+      "designer": [
+        "zai-coding-plan/glm-4.7",
+        "zai-coding-plan/glm-5",
+        "opencode/gpt-5-nano"
+      ],
+      "librarian": [
+        "zai-coding-plan/glm-4.7",
+        "opencode/minimax-m2.5-free"
+      ],
+      "explorer": [
+        "zai-coding-plan/glm-5",
+        "zai-coding-plan/glm-4.7",
+        "opencode/minimax-m2.5-free"
+      ]
+    }
+  }
+}
